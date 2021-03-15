@@ -37,9 +37,9 @@ class Linked_List(object):
         data= input("Enter what you want to search for = ")
         current = self.head
         while current:
-            if(current.return_data() is data):
+            if(current.return_data() == data):
                 print(data," found in the list!")
-                break
+                return
             current = current.get_next()
         print(data," not in the list :(")
     def delete(self):
@@ -140,12 +140,12 @@ class Linked_List(object):
             while (True):
                 print("Welcome to the linked list problem solver")
                 print("Options = ")
-                print("1 - Add to linked list --- urlifys a given string")
-                print("2 - Print List --- determines if a string is one edit distance away from another string")
-                print("3 - Remove Dups --- removes duplicates from a list")
-                print("4 - Delete linked list node --- determines if a string could be a palindrome")
-                print("5 - Kth to last --- determines if a string is a permutation of another string")
-                print("6 - Search for element --- determines if a string is one edit distance away from another string")
+                print("1 - Add to linked list --- Add a string to the linked list")
+                print("2 - Print List --- Print out all the elements ending with Tail ")
+                print("3 - Remove Dups --- Removes duplicates from the linked list")
+                print("4 - Delete linked list node --- Delete a specific element from the linked list")
+                print("5 - Kth to last --- Prints the kth to last element of the list, 0 being the last")
+                print("6 - Search for element --- Determines if a specific string is in the list")
                 print("E - Exit ")
                 optdict = {"5": self.kth_to_last, "3": self.remove_dups, "1": self.insert, "4": self.delete,
                            "2": self.print_all,"6":self.search, "E": self.Exit}
