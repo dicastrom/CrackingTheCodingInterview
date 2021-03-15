@@ -16,3 +16,15 @@ One Edit Distance --- determines if a string is one edit distance away from anot
 String Compression --- will return a compressed string
 <br>
 # Linked Lists
+Add to Linked List --- adds a single element to the list
+<br>
+Print List --- Prints all the elements in the list ending with "Tail"
+<br>
+Remove Dups --- Removes Duplicates in the list
+<br>
+Delete Linked List Node --- deletes a single node from the linked list
+<br>
+Kth to last element --- Prints the kth to last element of the list, 0 being the last
+<br>
+Search for element --- Determines if a specific string is in the list
+<br>
