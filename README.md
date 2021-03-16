@@ -28,3 +28,19 @@ Kth to last element --- Prints the kth to last element of the list, 0 being the 
 <br>
 Search for element --- Determines if a specific string is in the list
 <br>
+# Stacks
+Push --- push an element to the stack
+<br>
+Peek --- Prints top element of the stack
+<br>
+Pop --- Removes top element of the stack
+<br>
+Print Stack --- Prints the entire stack
+<br>
+Get Min Element --- Prints out the min element of the stack
+<br>
+Get Max Element --- Prints out the max element of the stack
+<br>
+Is Empty --- Determines if the stack is empty
+<br>
+
