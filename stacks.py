@@ -1,11 +1,10 @@
 
 
-
 '''
 
 Implementation of a basic stack in Python, pop(),push(),peek() and print stack are all implemented
 can add string or ints/floats to a stack
-keeps track of the largest/smallest element in the stack in an average of O(1) with a worst case of O(N). While the min 
+keeps track of the largest/smallest element in the stack in an average of O(1) with a worst case of O(N). While the min
 of max element is NOT the one being popped it will be O(1)
 
 To Do:
@@ -157,12 +156,12 @@ class Stack:
             print("Welcome to the stack demo. This stack implementation was created by Diego Castro.")
             print("Options = ")
             print("1 - Push to stack --- Add an element to the stack")
-            print("2 - Peek Top --- Print out all the elements ending with Tail ")
-            print("3 - Pop Top --- Removes duplicates from the linked list")
-            print("4 - Print Stack --- Delete a specific element from the linked list")
-            print("5 - Get Min Element --- Prints the kth to last element of the list, 0 being the last")
-            print("6 - Get Max Element --- Determines if a specific string is in the list")
-            print("7 - Is Empty --- Determines if a specific string is in the list")
+            print("2 - Peek Top --- Print the top element of the stack ")
+            print("3 - Pop Top --- Removes the top element of the stack")
+            print("4 - Print Stack --- Prints out the entire stack")
+            print("5 - Get Min Element --- Prints out the min element of the stack")
+            print("6 - Get Max Element --- Prints out the max element of the stack")
+            print("7 - Is Empty --- Determines if the stack is empty")
             print("E - Exit ")
             optdict = {"1": self.push_helper, "2": self.peek, "3": self.pop, "4": self.print_stack,
                        "5": self.get_min_element, "6": self.get_max_element,"7":self.is_empty, "E": self.Exit}
@@ -176,10 +175,6 @@ class Stack:
 
 stack = Stack()
 stack.Main()
-
-
-
-
 
 
 
