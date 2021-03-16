@@ -1,9 +1,17 @@
 
+
+
 '''
 
 Implementation of a basic stack in Python, pop(),push(),peek() and print stack are all implemented
 can add string or ints/floats to a stack
-keeps track of the largest/smallest element in the stack in O(1) time
+keeps track of the largest/smallest element in the stack in an average of O(1) with a worst case of O(N). While the min 
+of max element is NOT the one being popped it will be O(1)
+
+To Do:
+Fix the min/max elements
+
+
 '''
 
 
@@ -28,9 +36,28 @@ class Stack:
                 self.min_element = None
                 self.max_element = None
             else:
-                print("Popping ", self.top.data)
-                self.top = self.top.next
+                if(self.top.data == self.max_element or self.top.data == self.min_element):
+                    print("Popping ", self.top.data)
+                    self.top = self.top.next
+                    self.find_max_min()
 
+
+                else:
+                    print("Popping ", self.top.data)
+                    self.top = self.top.next
+
+    def find_max_min(self):
+        smallest = self.top.data
+        largest = self.top.data
+        current = self.top
+        while current:
+            if(current.data > largest):
+                largest=current.data
+            if(smallest > current.data):
+                smallest = current.data
+            current=current.next
+        self.min_element=smallest
+        self.max_element=largest
     def RepresentsInt(self,s):
         try:
             int(s)
@@ -149,6 +176,10 @@ class Stack:
 
 stack = Stack()
 stack.Main()
+
+
+
+
 
 
 
